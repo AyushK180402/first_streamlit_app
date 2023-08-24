@@ -35,10 +35,7 @@ try:
     streamlit.error("Please select a fruit to get information.")
     #import requests
   else:
-    back_from_function= get_fruityvice_data(fruit_choice)
-  #streamlit.text(fruityvice_response.json())
-  # write your own comment -what does the next line do? 
-  # write your own comment - what does this do?
+    back_from_function= get_fruitvice_data(fruit_choice)
     streamlit.dataframe(back_from_function)
 except URLError as e:
   stramlit.error()
